@@ -19,7 +19,7 @@ $pageName = "home";
         include "includes/navigation.php";
         ?>
     <main>
-        <p>Content goes here</p>
+        <p>Ryan was here</p>
     </main>
 </div>
 <?php
