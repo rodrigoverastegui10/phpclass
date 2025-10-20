@@ -19,11 +19,60 @@ include "../includes/header.php";
     include "../includes/navigation.php";
     ?>
     <main>
-        Todo: put file contents here.
+        <?php
+
+       $i = 1;
+
+       while ($i<7)
+       {
+           echo "<h$i>Hello World</h$i>";
+           $i++;
+       }
+
+        echo "<br />";
+       $i = 6;
+
+       while ($i>0)
+       {
+            echo "<h$i>Hello World</h$i>";
+            $i--;
+       }
+
+       echo "<br />";
+
+
+       for($i=1; $i<7; $i++)
+       {
+            echo "<h$i>Hello World</$i>";
+       }
+
+        echo "<br /><br />";
+       $FullName = "Doug Smith";
+       $Position = strpos($FullName,'');
+       echo $Position;
+
+        echo "<br /><br />";
+
+        $stuff = "My Stuff";
+        echo '<h3>$stuff</h3>';
+
+        echo strtoupper($FullName) . "<br />";
+        echo strtolower($FullName) . "<br />";
+        echo $FullName . "<br />";
+
+        echo "<br /> <br />";
+
+        $nameParts = explode (' ',$FullName);
+        echo $nameParts[0] . "<br />";
+        echo $nameParts[1];
+
+
+
+        ?>
     </main>
 </div>
 <?php
 include "../includes/footer.php"
-?>
+?>;;;
 </body>
 </html>
