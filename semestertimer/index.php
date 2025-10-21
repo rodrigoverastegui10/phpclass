@@ -38,7 +38,7 @@ include"../includes/header.php";
     include "../includes/navigation.php";
     ?>
     <main>
-       <h1>Countdown to end of semester</h1>
+       <h3>Countdown to end of semester</h3>
         <span>Days: <?=$days?> </span>
         <span>Hours: <?=$hours?> </span>
         <span>Minutes: <?=$minutes?> </span>
