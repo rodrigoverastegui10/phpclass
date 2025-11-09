@@ -76,7 +76,7 @@ include"../includes/header.php";
 
 
             </div>
-        </form>
+
     </main>
 </div>
 

@@ -7,6 +7,7 @@ $isSemesterTimer = $_SERVER['REQUEST_URI'] == '/semestertimer/' ? 'selected' : '
 $isDiceGame = $_SERVER['REQUEST_URI'] == '/dicegame/' ? 'selected' : '';
 $isMagic8ball = $_SERVER['REQUEST_URI'] == '/magic8ball/' ? 'selected' : '';
 $isMovieList = $_SERVER['REQUEST_URI'] == '/movielist/' ? 'selected' : '';
+$isCustomerDB = $_SERVER['REQUEST_URI'] == '/customerdb/' ? 'selected' : '';
 $isLogin = $_SERVER['REQUEST_URI'] == '/login/' ? 'selected' : '';
 
 ?>
@@ -32,6 +33,9 @@ $isLogin = $_SERVER['REQUEST_URI'] == '/login/' ? 'selected' : '';
         </li>
         <li class="<?=$isMovieList?>">
             <a href="/movielist">Movie List</a>
+        </li>
+        <li class="<?=$isCustomerDB?>">
+            <a href="/customerdb">Customer Database</a>
         </li>
         <li class="<?=$isLogin?>">
             <a href="/login">Login</a>

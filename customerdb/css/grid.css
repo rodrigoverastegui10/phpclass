@@ -1,0 +1,60 @@
+
+.grid-header {grid-area: grid-header;}
+.customer-first {grid-area: customer-first;}
+.firstname-input {grid-area: firstname-input;}
+.customer-last {grid-area: customer-last;}
+.lastname-input {grid-area: lastname-input;}
+.customer-address {grid-area: customer-address;}
+.address-input {grid-area: address-input;}
+.customer-city {grid-area: customer-city;}
+.city-input {grid-area: city-input;}
+.customer-state {grid-area: customer-state;}
+.state-input {grid-area: state-input;}
+.customer-zip {grid-area: customer-zip;}
+.zip-input {grid-area: zip-input;}
+.customer-phone {grid-area: customer-phone;}
+.phone-input {grid-area: phone-input;}
+.customer-email {grid-area: customer-email;}
+.email-input {grid-area: email-input;}
+.customer-password {grid-area: customer-password;}
+.password-input {grid-area: password-input;}
+.grid-footer {grid-area: grid-footer;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+            "grid-header grid-header"
+            "customer-first firstname-input"
+            "customer-last lastname-input"
+            "customer-address address-input"
+            "customer-city city-input"
+            "customer-state state-input"
+            "customer-zip zip-input"
+            "customer-phone phone-input"
+            "customer-email email-input"
+            "customer-password password-input"
+            "error-message error-message"
+            "grid-footer grid-footer"
+;
+    border: 1px solid black;
+}
+
+.grid-container > div {
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+.grid-container input[type="text"]{
+    width: 90%;
+    margin: 3px;
+}
+
+.error p {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
