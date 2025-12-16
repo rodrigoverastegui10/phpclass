@@ -49,10 +49,13 @@ include"../includes/header.php";
                 <th>Zip</th>
                 <th>Phone</th>
                 <th>Email</th>
+                <th>Password</th>
 
             </tr>
 
             <?php
+
+            session_start();
             include "../includes/db.php";
             $con = getDBConnection();
             $result = mysqli_query($con, "SELECT * FROM customerdatabase");
@@ -81,6 +84,7 @@ include"../includes/header.php";
                 echo "    <td>$zip</td>";
                 echo "    <td>$phone</td>";
                 echo "    <td>$email</td>";
+                echo "    <td>Secret</td>";
                 echo "</tr>";
             }
             ?>

@@ -1,5 +1,11 @@
 <?php
+session_start();
+
+$memberKey = sprintf('%04X%04X-%04X-%04X-%04X-%04X%04X%04X', mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(16384, 20479), mt_rand(32768, 49151), mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535));
+
 $errorMessage = "";
+
+
 if (!empty($_POST["txtFirstName"]) && !empty($_POST["txtLastName"]) &&
     !empty($_POST["txtAddress"]) && !empty($_POST["txtCity"]) &&
     !empty($_POST["txtState"]) && !empty($_POST["txtZip"]) &&
